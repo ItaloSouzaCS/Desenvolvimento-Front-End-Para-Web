@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Projetos de Voluntariado</title>
   </head>
   <body>
@@ -18,94 +25,81 @@
       </nav>
     </header>
 
-    <!-- Seção inicial -->
-    <section>
+    <main>
+      <!-- Seção inicial -->
+      <section class="principal_projetos container">
+
+        <div class="container__caixa">
+          <h2 class="container__titulo">Nossos Projetos de Voluntariado</h1>
+          <p class="container__texto">
+            Descubra como nossas ações transformam vidas e como você pode fazer
+            parte dessa corrente do bem.
+          </p>
+          <section>
+            <h2 class="container__titulo__secundario">Para Que Serve</h2>
+            <p class="container__texto">
+              O objetivo dos nossos projetos é promover a inclusão social, gerar
+              oportunidades e criar um impacto positivo na vida de quem mais
+              precisa. Além disso, incentivamos a participação da comunidade e
+              fortalecemos os vínculos entre voluntários e beneficiários.
+            </p>
+            <h3>Educação</h3>
+            <p class="container__texto">
+              Projetos que oferecem suporte escolar, reforço e capacitação para
+              crianças e adultos.
+            </p>
+            <h3>Saúde</h3>
+            <p class="container__texto">
+              Campanhas de conscientização, atendimento básico e apoio a pessoas
+              em vulnerabilidade.
+            </p>
+            <h3>Cultura e Inclusão</h3>
+            <p>
+              Atividades culturais e sociais que promovem integração, autoestima
+              e cidadania.
+            </p>
+        </div>
+  
       <div>
-        <h1>Nossos Projetos de Voluntariado</h1>
-        <p>
-          Descubra como nossas ações transformam vidas e como você pode fazer
-          parte dessa corrente do bem.
+        <h2 class="container__titulo__secundario">Como Funciona</h2>
+        <p class="container__texto">
+          Nossos projetos de voluntariado conectam pessoas dispostas a ajudar
+          com famílias e comunidades que precisam de apoio. Cada projeto é
+          planejado para atender necessidades específicas, seja em educação,
+          saúde, inclusão social ou atividades culturais.
         </p>
-        <img
-          src="img/voluntariado_projetos.png"
-          alt="Imagem de background com pessoas reunidas em projeto voluntário."
-        />
-      </div>
-    </section>
+         <!-- Call to Action -->
+        <section>
+          <div>
+            <h2 class="container__titulo__secundario">Participe dos Nossos Projetos</h2>
+            <p class="container__texto">Seja voluntário e faça parte dessa transformação!</p>
+            <div class="container_botoes">
+              <a href="cadastro.html" class="container__botao">Cadastre-se</a>
+              <a href="index.html" class="container__botao">Voltar ao Início</a>
+            </div>
+          </div>
+        </section>
 
-    <!-- Sobre o Projeto -->
-    <section>
-      <h2>Como Funciona</h2>
-      <p>
-        Nossos projetos de voluntariado conectam pessoas dispostas a ajudar com
-        famílias e comunidades que precisam de apoio. Cada projeto é planejado
-        para atender necessidades específicas, seja em educação, saúde, inclusão
-        social ou atividades culturais.
-      </p>
-
-      <h2>Para Que Serve</h2>
-      <p>
-        O objetivo dos nossos projetos é promover a inclusão social, gerar
-        oportunidades e criar um impacto positivo na vida de quem mais precisa.
-        Além disso, incentivamos a participação da comunidade e fortalecemos os
-        vínculos entre voluntários e beneficiários.
-      </p>
-
-      <div>
-        <div>
-          <h3>Educação</h3>
-          <p>
-            Projetos que oferecem suporte escolar, reforço e capacitação para
-            crianças e adultos.
-          </p>
+        <!-- Contato -->
+        <section>
+          <h2>Fale Conosco</h2>
+          <address>
+            <p class="container__texto">
+              <strong>Endereço:</strong> Passagem Bingo, 123 - Bom Clima, São
+              Paulo/SP
+            </p>
+            <p class="container__texto"><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p class="container__texto"><strong>E-mail:</strong> contato@organizacaovoluntario.org</p>
+          </address>
+        </section>
         </div>
-        <div>
-          <h3>Saúde</h3>
-          <p>
-            Campanhas de conscientização, atendimento básico e apoio a pessoas
-            em vulnerabilidade.
-          </p>
-        </div>
-        <div>
-          <h3>Cultura e Inclusão</h3>
-          <p>
-            Atividades culturais e sociais que promovem integração, autoestima e
-            cidadania.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section>
-      <div>
-        <h2>Participe dos Nossos Projetos</h2>
-        <p>Seja voluntário e faça parte dessa transformação!</p>
-        <div class="cta-buttons">
-          <a href="cadastro.html">Cadastre-se</a>
-          <a href="index.html">Voltar ao Início</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section>
-      <h2>Fale Conosco</h2>
-      <address>
-        <p>
-          <strong>Endereço:</strong> Passagem Bingo, 123 - Bom Clima, São
-          Paulo/SP
-        </p>
-        <p><strong>Telefone:</strong> (11) 99999-9999</p>
-        <p><strong>E-mail:</strong> contato@organizacaovoluntario.org</p>
-      </address>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer de informações -->
     <footer>
-      <p>
-        &copy; 2025 Organização de Voluntários. Todos os direitos reservados.
-      </p>
+      <p>&copy; 2025</p>
+      <p>Organização de Voluntários. Todos os direitos reservados.</p>
       <p>Feito com amor para transformar vidas</p>
     </footer>
   </body>

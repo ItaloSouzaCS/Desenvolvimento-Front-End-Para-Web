@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Organização de Volutários</title>
   </head>
   <body>
@@ -20,34 +27,32 @@
 
     <!-- Conteúdo principal -->
     <main>
-      <div>
-        <h2>Transforme Vidas com Voluntariado</h2>
-        <p>
-          Somos uma organização dedicada à inclusão social e ao atendimento de
-          famílias. Junte-se a nós e faça a diferença!
-        </p>
-        <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
-        <img
-          src="img/voluntariado.jpg"
-          alt="Imagem de background com pessoas em trabalho voluntário."
-        />
-      </div>
-
-      <div>
-        <h2>Quem Somos</h2>
-        <p>
-          Somos uma organização sem fins lucrativos que atua no atendimento de
-          famílias em inclusão social, promovendo dignidade, esperança e
-          oportunidades para quem mais precisa.
-        </p>
-      </div>
+      <section class="principal container">
+        <div class="container__caixa">
+          <h2 class="container__titulo">Transforme Vidas com Voluntariado</h2>
+          <p class="container__texto">
+            Somos uma organização dedicada à inclusão social e ao atendimento de
+            famílias. Junte-se a nós e faça a diferença!
+          </p>
+          <a href="cadastro.html" class="container__botao"
+            >Quero Ser Voluntário</a
+          >
+        </div>
+        <div class="container__caixa">
+          <h2 class="container__titulo">Quem Somos</h2>
+          <p class="container__texto">
+            Somos uma organização sem fins lucrativos que atua no atendimento de
+            famílias em inclusão social, promovendo dignidade, esperança e
+            oportunidades para quem mais precisa.
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Footer de informações -->
     <footer>
-      <p>
-        &copy; 2025 Organização de Voluntários. Todos os direitos reservados.
-      </p>
+      <p>&copy; 2025</p>
+      <p>Organização de Voluntários. Todos os direitos reservados.</p>
       <p>Feito com amor para transformar vidas</p>
     </footer>
   </body>
