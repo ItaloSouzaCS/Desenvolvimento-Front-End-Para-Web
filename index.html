@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Signature&display=swap"
       rel="stylesheet"
     />
-    <title>Organização de Voluntários - Início</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -23,34 +23,19 @@
         />
 
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="index.html">Início</a></li>
-          <li class="nav__item"><a href="projetos.html">Projetos</a></li>
-          <li class="nav__item"><a href="cadastro.html">Cadastro</a></li>
+          <li class="nav__item"><a href="#/" data-route="home">Início</a></li>
+          <li class="nav__item">
+            <a href="#/projetos" data-route="projetos">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#/cadastro" data-route="cadastro">Cadastro</a>
+          </li>
         </ul>
-        <a href="/" class="home">Voluntários</a>
+        <a href="#/" data-route="home" class="home">Voluntários</a>
       </nav>
     </header>
 
-    <div class="grid grid--1x2 grid-inicio">
-      <div class="hero__content">
-        <h1 class="block__heading">Transforme Vidas com Voluntariado</h1>
-        <p class="hero__tagline">
-          Somos uma organização dedicada à inclusão social e ao atendimento de
-          famílias. Junte-se a nós e faça a diferença!
-        </p>
-        <a href="./cadastro.html" class="btn btn--tertiary btn--stretched"
-          >Quero ser Voluntário!</a
-        >
-      </div>
-      <div class="hero__content--right">
-        <h1 class="block__heading">Quem Somos</h1>
-        <p class="hero__tagline">
-          Somos uma organização sem fins lucrativos que atua no atendimento de
-          famílias em inclusão social, promovendo dignidade, esperança e
-          oportunidades para quem mais precisa.
-        </p>
-      </div>
-    </div>
+    <main id="app"></main>
 
     <!-- Footer de informações -->
     <footer class="foo">

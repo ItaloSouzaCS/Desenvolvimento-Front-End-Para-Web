@@ -16,6 +16,10 @@ html{
     font-size: 62.5%;
 }
 
+main#app {
+    min-height: 100vh;
+}
+
 body {
     font-family: Inter, Arial, Halvetica, sans-serif;
     font-size: 2.4rem;
@@ -318,6 +322,7 @@ a {
     margin: 0;
     padding: 0;
     text-align: center; /* centraliza horizontalmente */
+    min-height: 10%;
 }
 
 .foo p {
@@ -355,14 +360,6 @@ form legend {
     border-radius: 6px;
     border: 1px solid  var(--color-headings);
     font-size: 1rem;
-}
-
-.success-message {
-    display: none; 
-    margin-bottom: 1rem;
-    color: green;
-    font-weight: bold;
-    text-align: center;
 }
 
 /* Media Queries */
@@ -445,6 +442,15 @@ form legend {
     .grid-cadastro::before {
         background-image: linear-gradient(to top, rgba(158, 168, 214, 0.85) 0%, rgba(102,126,234,0.0) 80%), url("./img/voluntariado_cadastro.jpeg");
     }
+
+    main#app .grid--1x2 {
+        min-height: 100vh !important;
+    }
+
+    main#app .grid--1x2::before {
+        min-height: 100vh !important;
+    }
+
 } 
 
 @media screen and (min-width: 1024px) {
@@ -479,5 +485,3 @@ form legend {
     padding-right: 5%;
   }
 }
-
-    
