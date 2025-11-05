@@ -1,0 +1,109 @@
+<div class="grid grid--1x2 grid-cadastro">
+  <div class="hero__content">
+    <h1 class="block__heading">Cadastre-se como Voluntário</h1>
+    <p class="hero__tagline">
+      Junte-se a nós e faça a diferença na vida de muitas pessoas através do
+      voluntariado.
+    </p>
+
+    <div class="plan plan--popular tabelaVoluntarios"></div>
+  </div>
+
+  <div class="hero__content--right">
+    <form id="formularioVoluntariado" class="form">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="form-group">
+          <label class="hero__tagline" for="nome">Nome Completo *</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label class="hero__tagline" for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label class="hero__tagline" for="telefone">Telefone *</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(11) 99999-9999"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="hero__tagline" for="idade">Idade *</label>
+          <input
+            type="number"
+            id="idade"
+            name="idade"
+            min="16"
+            max="100"
+            required
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Disponibilidade</legend>
+
+        <label class="hero__tagline" for="disponibilidade"
+          >Quando você pode ajudar? *</label
+        >
+        <select id="disponibilidade" name="disponibilidade" required>
+          <option value="">Selecione...</option>
+          <option value="fins-de-semana">Fins de semana</option>
+          <option value="dias-uteis">Dias úteis</option>
+          <option value="flexivel">Horário flexível</option>
+          <option value="pontual">Ações pontuais</option>
+        </select>
+
+        <label class="hero__tagline" for="area-interesse"
+          >Área de Interesse *</label
+        >
+        <select id="area-interesse" name="area-interesse" required>
+          <option value="">Selecione...</option>
+          <option value="distribuicao-alimentos">
+            Distribuição de Alimentos
+          </option>
+          <option value="educacao">Educação e Capacitação</option>
+          <option value="saude">Apoio à Saúde</option>
+          <option value="administrativo">Apoio Administrativo</option>
+          <option value="qualquer">Qualquer área</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Adicionais</legend>
+
+        <div class="form-group">
+          <label class="hero__tagline" for="experiencia"
+            >Você já participou de ações voluntárias antes?</label
+          >
+          <textarea
+            id="experiencia"
+            name="experiencia"
+            placeholder="Conte-nos sobre sua experiência..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="hero__tagline" for="motivacao"
+            >Por que você quer ser voluntário?</label
+          >
+          <textarea
+            id="motivacao"
+            name="motivacao"
+            placeholder="Compartilhe sua motivação..."
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn--tertiary btn--stretched">
+        Enviar Cadastro
+      </button>
+    </form>
+  </div>
+</div>

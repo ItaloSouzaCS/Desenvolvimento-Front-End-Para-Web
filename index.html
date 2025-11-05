@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Organização de Volutários</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Signature&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <!-- Header de navegação -->
     <header>
-      <nav>
-        <h1>Voluntários</h1>
-        <ul>
-          <li>Home</li>
-          <li>Projetos</li>
-          <li>Cadastro</li>
+      <nav class="nav collapsible">
+        <img
+          class="icon icon--primary nav__toggler"
+          src="./imagens/menu.svg"
+          alt="Menu Icon"
+        />
+
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#/" data-route="home">Início</a></li>
+          <li class="nav__item">
+            <a href="#/projetos" data-route="projetos">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#/cadastro" data-route="cadastro">Cadastro</a>
+          </li>
         </ul>
+        <a href="#/" data-route="home" class="home">Voluntários</a>
       </nav>
     </header>
 
-    <!-- Conteúdo principal -->
-    <main>
-      <div>
-        <h2>Transforme Vidas com Voluntariado</h2>
-        <p>
-          Somos uma organização dedicada à inclusão social e ao atendimento de
-          famílias. Junte-se a nós e faça a diferença!
-        </p>
-        <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
-      </div>
-
-      <div>
-        <h2>Quem Somos</h2>
-        <p>
-          Somos uma organização sem fins lucrativos que atua no atendimento de
-          famílias em inclusão social, promovendo dignidade, esperança e
-          oportunidades para quem mais precisa.
-        </p>
-      </div>
-    </main>
+    <main id="app"></main>
 
     <!-- Footer de informações -->
-    <footer>
-      <p>
-        &copy; 2025 Organização de Voluntários. Todos os direitos reservados.
-      </p>
+    <footer class="foo">
+      <p>&copy; 2025</p>
+      <p>Organização de Voluntários. Todos os direitos reservados.</p>
       <p>Feito com amor para transformar vidas</p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
