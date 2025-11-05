@@ -2,104 +2,97 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Signature&display=swap"
       rel="stylesheet"
     />
-    <title>Projetos de Voluntariado</title>
+    <title>Projetos de Voluntários</title>
   </head>
   <body>
     <!-- Header de navegação -->
     <header>
-      <nav>
-        <h1>Voluntários</h1>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
+      <nav class="nav collapsible">
+        <img
+          class="icon icon--primary nav__toggler"
+          src="./imagens/menu.svg"
+          alt="Menu Icon"
+        />
+
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="index.html">Início</a></li>
+          <li class="nav__item"><a href="projetos.html">Projetos</a></li>
+          <li class="nav__item"><a href="cadastro.html">Cadastro</a></li>
         </ul>
+        <a href="/" class="home">Voluntários</a>
       </nav>
     </header>
 
-    <main>
-      <!-- Seção inicial -->
-      <section class="principal_projetos container">
+    <div class="grid grid--1x2 grid-projetos">
+      <div class="hero__content">
+        <h1 class="block__heading">Nossos Projetos de Voluntariado</h1>
+        <p class="hero__tagline">
+          Descubra como nossas ações transformam vidas e como você pode fazer
+          parte dessa corrente do bem.
+        </p>
+        <div class="plan plan--popular">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Para Que Serve</h3>
 
-        <div class="container__caixa">
-          <h2 class="container__titulo">Nossos Projetos de Voluntariado</h1>
-          <p class="container__texto">
-            Descubra como nossas ações transformam vidas e como você pode fazer
-            parte dessa corrente do bem.
-          </p>
-          <section>
-            <h2 class="container__titulo__secundario">Para Que Serve</h2>
-            <p class="container__texto">
-              O objetivo dos nossos projetos é promover a inclusão social, gerar
-              oportunidades e criar um impacto positivo na vida de quem mais
-              precisa. Além disso, incentivamos a participação da comunidade e
-              fortalecemos os vínculos entre voluntários e beneficiários.
-            </p>
-            <h3>Educação</h3>
-            <p class="container__texto">
-              Projetos que oferecem suporte escolar, reforço e capacitação para
-              crianças e adultos.
-            </p>
-            <h3>Saúde</h3>
-            <p class="container__texto">
-              Campanhas de conscientização, atendimento básico e apoio a pessoas
-              em vulnerabilidade.
-            </p>
-            <h3>Cultura e Inclusão</h3>
-            <p>
-              Atividades culturais e sociais que promovem integração, autoestima
-              e cidadania.
-            </p>
+              <p class="hero__tagline">
+                O objetivo dos nossos projetos é promover a inclusão social,
+                gerar oportunidades e criar um impacto positivo na vida de quem
+                mais precisa. Além disso, incentivamos a participação da
+                comunidade e fortalecemos os vínculos entre voluntários e
+                beneficiários.
+              </p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Educação</li>
+                <li class="list__item">Saúde</li>
+                <li class="list__item">Cultura e Inclusão</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Cadastre-se</button>
+            </div>
+          </div>
         </div>
-  
-      <div class="container__botoes">
-        <h2 class="container__titulo__secundario">Como Funciona</h2>
-        <p class="container__texto">
+      </div>
+      <div class="hero__content--right">
+        <h1 class="block__heading">Como Funciona</h1>
+        <p class="hero__tagline">
           Nossos projetos de voluntariado conectam pessoas dispostas a ajudar
           com famílias e comunidades que precisam de apoio. Cada projeto é
           planejado para atender necessidades específicas, seja em educação,
           saúde, inclusão social ou atividades culturais.
         </p>
-         <!-- Call to Action -->
-        <section>
-          <div>
-            <h2 class="container__titulo__secundario">Participe dos Nossos Projetos</h2>
-            <p class="container__texto">Seja voluntário e faça parte dessa transformação!</p>
-            <div class="container_botoes">
-              <a href="./cadastro.html" class="container__botao">Cadastre-se</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contato -->
-        <section>
-          <h2>Fale Conosco</h2>
-          <address>
-            <p class="container__texto">
-              <strong>Endereço:</strong> Passagem Bingo, 123 - Bom Clima, São
-              Paulo/SP
-            </p>
-            <p class="container__texto"><strong>Telefone:</strong> (11) 99999-9999</p>
-            <p class="container__texto"><strong>E-mail:</strong> contato@organizacaovoluntario.org</p>
-          </address>
-        </section>
-        </div>
-        </section>
-    </main>
+        <h1 class="block__heading">Fale Conosco</h1>
+        <address>
+          <p class="hero__tagline">
+            <strong>Endereço:</strong> Passagem Bingo, 123 - Bom Clima, São
+            Paulo/SP
+          </p>
+          <p class="hero__tagline">
+            <strong>Telefone:</strong> (11) 99999-9999
+          </p>
+          <p class="hero__tagline">
+            <strong>E-mail:</strong> contato@organizacaovoluntario.org
+          </p>
+        </address>
+      </div>
+    </div>
 
     <!-- Footer de informações -->
-    <footer>
+    <footer class="foo">
       <p>&copy; 2025</p>
       <p>Organização de Voluntários. Todos os direitos reservados.</p>
       <p>Feito com amor para transformar vidas</p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
